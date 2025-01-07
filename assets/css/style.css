@@ -1,0 +1,16 @@
+/* Custom styles for the portfolio */
+body {
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
