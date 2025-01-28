@@ -4,128 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero and About Section -->
-  <header class="bg-primary text-white py-5" id="home">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center">
-          <img src="images/myphoto.jpg" alt="My Photo" class="img-fluid rounded-circle" style="max-width: 200px;">
-        </div>
-        <div class="col-md-8 text-center text-md-start">
-          <h1>Welcome to My Portfolio</h1>
-          <p class="lead">I am a skilled full-stack developer with experience in building dynamic web applications using modern technologies. I thrive on solving challenging problems and crafting user-friendly designs that deliver real value.</p>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">My Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/project1.png" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <p class="card-text">Brief description of the project.</p>
-              <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
-              <a href="https://yourliveprojectlink.com" class="btn btn-secondary" target="_blank">View Live Project</a>
-            </div>
-          </div>
-        </div>
-        <!-- Repeat for more projects -->
-      </div>
+  <section id="hero">
+    <h1>Hi, I'm Dean Wraith</h1>
+    <p>Frontend Developer passionate about creating beautiful and functional web experiences.</p>
+    <br>
+    <div>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="path-to-your-cv.pdf" class="btn" download="Your_Name_CV.pdf">Download CV</a>
     </div>
+  </section>  
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I specialize in creating responsive and interactive websites with modern technologies. I'm passionate about learning and building innovative projects.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">My Skills</h2>
-      <div class="row text-center">
-        <!-- Skill 1 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-html5 fa-3x text-primary"></i>
-          <h5 class="mt-2">HTML5</h5>
-        </div>
-        <!-- Skill 2 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-css3-alt fa-3x text-primary"></i>
-          <h5 class="mt-2">CSS3</h5>
-        </div>
-        <!-- Skill 3 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-js-square fa-3x text-warning"></i>
-          <h5 class="mt-2">JavaScript</h5>
-        </div>
-        <!-- Skill 4 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-react fa-3x text-info"></i>
-          <h5 class="mt-2">React.js</h5>
-        </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A responsive website built for a portfolio showcase.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+        </ul>
+        <a href="#" target="_blank">View Demo</a>
       </div>
-      <div class="row text-center">
-        <!-- Skill 5 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-python fa-3x text-success"></i>
-          <h5 class="mt-2">Python</h5>
-        </div>
-        <!-- Skill 6 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-docker fa-3x text-primary"></i>
-          <h5 class="mt-2">Docker</h5>
-        </div>
-        <!-- Skill 7 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fas fa-database fa-3x text-secondary"></i>
-          <h5 class="mt-2">PostgreSQL</h5>
-        </div>
-        <!-- Skill 8 -->
-        <div class="col-md-3 col-sm-6 mb-4">
-          <i class="fab fa-git-alt fa-3x text-danger"></i>
-          <h5 class="mt-2">Git</h5>
-        </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>An interactive to-do list application with animations.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Local Storage</li>
+        </ul>
+        <a href="#" target="_blank">View Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A weather app fetching data from an API.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API Integration</li>
+        </ul>
+        <a href="#" target="_blank">View Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 4</h3>
+        <p>A personal blog platform with custom themes.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Flexbox/Grid</li>
+        </ul>
+        <a href="#" target="_blank">View Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 5</h3>
+        <p>A simple e-commerce landing page with animations.</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>GSAP Animations</li>
+        </ul>
+        <a href="#" target="_blank">View Demo</a>
       </div>
     </div>
+  </section>  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>© 2025 Your Name</p>
+  <footer>
+    <p>© 2025 [Your Name]. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Return to Top Button -->
+  <div id="return-to-top" title="Return to Top">
+    ↑
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
 </body>
 </html>
-
-
-
-
