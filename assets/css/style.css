@@ -258,3 +258,52 @@ footer {
     text-align: center;
   }
 }
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  color: #fff;
+  text-align: center;
+  position: relative; /* Ensure the line is positioned relative to this section */
+  overflow: hidden; /* Prevent any horizontal overflow */
+}
+
+.line {
+  position: absolute;
+  top: 50%; /* Align the line in the center vertically */
+  left: 50%; /* Center the line horizontally */
+  width: 90vw; /* Make the line 90% of the viewport width */
+  height: 2px; /* Line thickness */
+  background-color: #fff;
+  animation: moveLine 5s ease-in-out infinite; /* Add animation */
+  transform: translateX(-50%); /* Center the line */
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%); /* Move the line to the right */
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .moving-line {
+    top: 30%; /* Move the line higher on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .moving-line {
+    top: 25%; /* Move it even higher on very small screens */
+  }
+}
