@@ -18,7 +18,6 @@ returnToTopButton.addEventListener('click', () => {
   });
 });
 
-// Initialize EmailJS with your public key
 emailjs.init("cFQ6to2lv6wfELE_1");
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -28,7 +27,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         .then(() => {
             alert('Message Sent Successfully!');
             console.log('SUCCESS!');
-            this.reset(); // Reset the form after submission
+            this.reset();
         })
         .catch((error) => {
             alert('Failed to send message. Please check your details and try again.');
